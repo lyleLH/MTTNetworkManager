@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C7D3ED902F9F2AD65BF89B3 /* libPods-MTTNetworkManger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B56A58E9DAF0476A74CB036 /* libPods-MTTNetworkManger.a */; };
 		C595EC611FA05F3F0083217F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C595EC601FA05F3F0083217F /* AppDelegate.m */; };
 		C595EC641FA05F3F0083217F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C595EC631FA05F3F0083217F /* ViewController.m */; };
 		C595EC671FA05F3F0083217F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C595EC651FA05F3F0083217F /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B56A58E9DAF0476A74CB036 /* libPods-MTTNetworkManger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTTNetworkManger.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B94951D35C1F055E518F5AEB /* Pods-MTTNetworkManger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTTNetworkManger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTTNetworkManger/Pods-MTTNetworkManger.debug.xcconfig"; sourceTree = "<group>"; };
 		C595EC5C1FA05F3F0083217F /* MTTNetworkManger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTTNetworkManger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C595EC5F1FA05F3F0083217F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C595EC601FA05F3F0083217F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		C595EC6B1FA05F3F0083217F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C595EC6D1FA05F3F0083217F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C595EC6E1FA05F3F0083217F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF855A2A57C3881070E151F9 /* Pods-MTTNetworkManger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTTNetworkManger.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTTNetworkManger/Pods-MTTNetworkManger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7D3ED902F9F2AD65BF89B3 /* libPods-MTTNetworkManger.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AB62ED7BD21E0F17DFF76E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B94951D35C1F055E518F5AEB /* Pods-MTTNetworkManger.debug.xcconfig */,
+				CF855A2A57C3881070E151F9 /* Pods-MTTNetworkManger.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C595EC531FA05F3F0083217F = {
 			isa = PBXGroup;
 			children = (
 				C595EC5E1FA05F3F0083217F /* MTTNetworkManger */,
 				C595EC5D1FA05F3F0083217F /* Products */,
+				9AB62ED7BD21E0F17DFF76E1 /* Pods */,
+				C71A703C7DC2ABE47AE05558 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +87,14 @@
 			path = MTTNetworkManger;
 			sourceTree = "<group>";
 		};
+		C71A703C7DC2ABE47AE05558 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B56A58E9DAF0476A74CB036 /* libPods-MTTNetworkManger.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C595EC721FA05F3F0083217F /* Build configuration list for PBXNativeTarget "MTTNetworkManger" */;
 			buildPhases = (
+				22A74A10B8251FEBBF830116 /* [CP] Check Pods Manifest.lock */,
 				C595EC581FA05F3F0083217F /* Sources */,
 				C595EC591FA05F3F0083217F /* Frameworks */,
 				C595EC5A1FA05F3F0083217F /* Resources */,
+				494684522BBBA1702A2D076D /* [CP] Embed Pods Frameworks */,
+				DC458DA9BFF3760CFAE23303 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22A74A10B8251FEBBF830116 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MTTNetworkManger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		494684522BBBA1702A2D076D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTTNetworkManger/Pods-MTTNetworkManger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC458DA9BFF3760CFAE23303 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTTNetworkManger/Pods-MTTNetworkManger-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C595EC581FA05F3F0083217F /* Sources */ = {
@@ -276,6 +354,7 @@
 		};
 		C595EC731FA05F3F0083217F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B94951D35C1F055E518F5AEB /* Pods-MTTNetworkManger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,6 +368,7 @@
 		};
 		C595EC741FA05F3F0083217F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF855A2A57C3881070E151F9 /* Pods-MTTNetworkManger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
